@@ -365,11 +365,11 @@
         </div>
     </header>
 	
-	<section class="mission pt pb">
+	<section class="mission bg-white pt pb">
         <div class="container">
             <img src="img/vertical-rule.svg" data-aos="fade-down">
             <h2>{{ entry.missionHeader2 }}</h2>
-            <div class="mission-box">
+            <div class="mission-box border-dark border">
                 <p class="statement">{{ entry.missionHeader2Body }}</p>
                 <div class="mission-icon-wrapper">
                     <img class="mission-icon" src="img/mission-icon.svg">
@@ -378,50 +378,25 @@
         </div>
     </section>
 
-    <section class="mission-intro">
-        <div class="fluid-container">
-            <div class="row">
-                <div class="col-lg-8"></div>
-                <div class="col side-image" style="background-image: url(/img/commit-foundation_mission_flag.jpg);">
-                    <!-- Desktop -->
-                    <hr data-aos="grow-a">
-                </div>
-            </div>
-            <div class="container">
-                <div class="copy">
-                    <h2 class="display-6">{{ entry.missionHeader1 }}</h2>
-                    <hr data-aos="grow-c">
-                </div>
-            </div>
-            <img class="img-fluid side-image-mobile" alt="The COMMIT Foundation is a 501c3 non-profit organization, fundamentally changing the way veterans approach their transition from the military to the civilian sector." src="img/commit-foundation_mission_flag.jpg">
-            <!-- Mobile -->
-        </div>
-    </section>
-
-
-
-    <section class="focus mission-objective pt">
+    <section class="focus pt pb">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <img class="img-fluid rellax-a" alt="The objective of the COMMIT foundation is to connect veterans to a career and professional network that encourages them to expand their aperture and translate their cultivated professional skills to a meaningful career in the civilian sector." src="img/commit-foundation_mission_objective.jpg">
+                    <img class="img-fluid rellax-a" alt="COMMIT focuses on quality over quantity through small touch, high impact work. After identifying your strengths and skills, begin focusing your career choices at the convergence of passion, expertise, and geography to capitalize on new opportunities." src="img/commit-foundation_corporate-education_footer.jpg">
                 </div>
                 <div class="col-lg-6">
                     <div class="copy">
-                        <h2 class="display-5">{{ entry.missionHeader3 }}</h2>
-                        <p>{{ entry.missionHeader3Body }}</p>
-                        <span>
-                            {% set document = entry.missionCtaFile.first() %}
-                            <a class="red" href="{{ document.url }}" target="_blank">{{ entry.missionCallToAction }}</a>
-                        </span>
-
+                        <h2 class="display-5">{{ entry.howItStartedHeading }}</h2>
+                        <p>{{ entry.howItStartedBody }}</p>
+                        <p>{{ entry.howItStartedBody2 }}</p>
+                        <p>{{ entry.howItStartedBody3 }}</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="mission-objective-statement pb-sm pt-sm">
+    <section class="mission-objective-statement pb-sm">
         <div class="container">
             <div class="impact-copy">
                 <h2>{{ entry.missionHeader4 }}</h2>
@@ -430,7 +405,7 @@
         </div>
     </section>
 
-    <section class="mission-objective-img">
+    <section class="">
         <div class="container">
             <div class="embed-responsive embed-responsive-16by9">
                 <!-- need to add CMS tag here -->
@@ -440,39 +415,96 @@
         </div>
     </section>
 
-    <section class="tailored-programs double-section pt pb">
+    <section class="partners reports bg-white pb-sm pt-sm">
         <div class="container">
-            <div class="row margin">
-                <div class="col-md-6">
-                    <h2 class="display-5">{{ entry.missionHeader5 }}</h2>
-                    <hr data-aos="grow-a" data-aos-delay="100">
-                </div>
-                <div class="col-md-6">
-                    <p>{{ entry.missionHeader5Body }}</p>
-                </div>
-            </div>
+            <div class="impact-copy">
+                <h2 class="display-5" style="margin-bottom: 0px;">{{ entry.whyWeExistHeader }}</h2>
+                <hr data-aos="grow-b" class="aos-init aos-animate">
+              </div>
+        </div>
+    </section>
+
+
+    <section class="focus bg-white">
+        <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <h2 class="display-5">{{ entry.missionHeader6 }}</h2>
-                    <hr data-aos="grow-a" data-aos-delay="100">
+                <div class="col-lg-6">
+                    <img class="img-fluid rellax-a" alt="COMMIT focuses on quality over quantity through small touch, high impact work. After identifying your strengths and skills, begin focusing your career choices at the convergence of passion, expertise, and geography to capitalize on new opportunities." src="img/commit-foundation_corporate-education_footer.jpg">
                 </div>
-                <div class="col-md-6">
-                    <p>{{ entry.missionHeader6Body }}</p>
+                <div class="col-lg-6">
+                    <div class="copy">
+                        <h2 class="display-5">{{ entry.whyWeExistSubHeader }}</h2>
+                        <p>{{ entry.whyWeExistBody }}</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="apply-bottom mission-support pt pb" style="background-image: linear-gradient(rgba(3,13,38,.7),rgba(3,13,38,.7)),linear-gradient(to left,#030d26,rgba(3,13,38,.75) 52%,#030d26),url(/img/commit-foundation_mission_support.jpg);">
+    <section class="mission-objective-statement pb-sm pt-sm">
         <div class="container">
-            <div class="hero-copy">
-                <h1>Support Post 9-11 Service Members & Veterans</h1>
-                <a class="ice-blue" href="/donate">Donate Now</a>
+            <div class="impact-copy">
+                <h2>{{ entry.whoWeServeHeading }}</h2>
+                <p>{{ entry.whoWeServeBody }}</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="focus mentorship-intro">
+        <div class="container" style="max-width: 100%;">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="copy">
+                        <h2 class="display-5">{{ entry.whoWeAreHeading }}</h2>
+                        <p>{{ entry.whoWeAreBody }}</p>
+                    </div>
+                </div>
+                <div class="col-lg-6" style="padding-right: 0px;">
+                    <img class="img-fluid" alt="COMMIT focuses on quality over quantity through small touch, high impact work. After identifying your strengths and skills, begin focusing your career choices at the convergence of passion, expertise, and geography to capitalize on new opportunities." src="img/planes.png">
+                </div>
             </div>
         </div>
     </section>
 
-    </div>
+    <section class="mission-objective-statement pb-sm pt-sm">
+        <div class="container">
+            <div class="impact-copy">
+                <h2>{{ entry.whatWeDoHeading }}</h2>
+                <p>{{ entry.whatWeDoBody }}</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="focus bg-white pt pb">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="copy">
+                        <h2 class="display-5">{{ entry.howWeDoItHeading }}</h2>
+                        <p>{{ entry.howWeDoItBody }}</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid rellax-a" alt="COMMIT focuses on quality over quantity through small touch, high impact work. After identifying your strengths and skills, begin focusing your career choices at the convergence of passion, expertise, and geography to capitalize on new opportunities." src="img/commit-foundation_corporate-education_footer.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="donate-other">
+        <div class="container pt pb">
+            <h2 class="display-5">{{ entry.donateOtherAmountTitle2 }}</h2>
+            <p>{{ entry.donateOtherAmountSubtitle2 }}</p>
+
+            <div class="donation-give-smart-container">
+                <iframe id="mc-donation" src="https://fundraise.givesmart.com/form/{{ entry.giveSmartFormId }}?utm_source=embed&utm_medium=page&utm_campaign=donation" width="100%" height="1795" overflow="scroll" onLoad="window.scrollTo(0,0);"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+</div>
 
     <section class="footer pb-sm-b">
         <div class="container desktop">
