@@ -61,15 +61,14 @@
 {% include "/parts/_header.twig" %}
 
 <div class="main">
-    {% set articleID = craft.request.getQuery("id") %}
-    {% set entry = craft.entries.id(articleID).first() %}
+    {% set slug = craft.app.request.getSegment(2) %}
+    {% set entry = craft.entries.section('blog').slug(slug).one() %}
     {% set image = entry.blogimage.first() %}
     <header class="masthead-b news-article">
         <div class="fluid-container">
             <div class="container"></div>
         </div>
     </header>
-
     <section class="news-article-body">
         <div class="container">
             <div class="news-wrapper">
